@@ -57,7 +57,7 @@ freeradius -> authentification des clients
 
 Ajoût de lien EFM :
 
-    vispprov nas add -a 130.193.30.101/30 -v 217.15.80.54:2600/0/32 -m 130.193.30.102 -c "EFM JOEY"
+    vispprov nas add -a 130.193.30.101/30 -v "peer":"port"/"vp"/"vc" -m 130.193.30.102 -c "EFM JOEY"
     -> interface nas254001 created
     -> ok
 
