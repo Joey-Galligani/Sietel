@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sietel - Cheat-Sheet</title>
+    <link rel="stylesheet" href="./styleunify.css" type="text/css">
+    <script>
+        function rechercher() {
+            var texteRecherche = document.getElementById('inputTexte').value.toLowerCase();
+            var tdListe = document.querySelectorAll('#scrollContent td:nth-child(2)'); // Select the second column
+
+            tdListe.forEach(function (td) {
+                var texteTD = td.textContent.toLowerCase();
+                if (texteTD.includes(texteRecherche)) {
+                    td.parentNode.style.backgroundColor = '#6fa2ee'; // Highlight the entire row
+                } else {
+                    td.parentNode.style.backgroundColor = ''; // Reset the row's color
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+<header>
+    <h1>Raccourcis Unify</h1>
+    <br><br>
+<button class="mon-bouton" onclick="window.location.href='./index.html'">Accueil</button>
+<button class="mon-bouton" onclick="window.location.href='./VISP.html'">VISP</button>
+<br><br>
+</header>
+    <br><br>
+    <input type="text" id="inputTexte">
+    <button onclick="rechercher()">Rechercher</button>
+    <br><br>
+    <table align="center">
+        <tbody id="scrollContent">
+        
+          <input value="0" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">1 - </td><td width="40%" align="left">Reprise d'une communication en attente</td><td width="15%" align="center"><input value="*0" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-0')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-0"><input value="*0" type="hidden" id="oldh0x11C70002_0x01-0"></td>
+          </tr>
+          
+          <input value="1" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">2 - </td><td width="40%" align="left">Renvoi</td><td width="15%" align="center"><input value="*1" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-1')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-1"><input value="*1" type="hidden" id="oldh0x11C70002_0x01-1"></td>
+          </td>
+          
+          <input value="2" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">3 - </td><td width="40%" align="left">Va et vient</td><td width="15%" align="center"><input value="*2" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-2')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-2"><input value="*2" type="hidden" id="oldh0x11C70002_0x01-2"></td>
+          </td>
+          
+          <input value="3" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">4 - </td><td width="40%" align="left">Conférence</td><td width="15%" align="center"><input value="*3" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-3')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-3"><input value="*3" type="hidden" id="oldh0x11C70002_0x01-3"></td>
+          </td>
+          
+          <input value="4" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">5 - </td><td width="40%" align="left">Activer le renvoi de nuit</td><td width="15%" align="center"><input value="*44" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-4')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-4"><input value="*44" type="hidden" id="oldh0x11C70002_0x01-4"></td>
+          </td>
+          
+          <input value="5" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">6 - </td><td width="40%" align="left">Envoyer un flash sur une ligne réseau</td><td width="15%" align="center"><input value="*51" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-5')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-5"><input value="*51" type="hidden" id="oldh0x11C70002_0x01-5"></td>
+          </td>
+          
+          <input value="6" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">7 - </td><td width="40%" align="left">Coupure micro</td><td width="15%" align="center"><input value="*52" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-6')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-6"><input value="*52" type="hidden" id="oldh0x11C70002_0x01-6"></td>
+          </td>
+          
+          <input value="7" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">8 - </td><td width="40%" align="left">Surnumérotation MF</td><td width="15%" align="center"><input value="*53" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-7')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-7"><input value="*53" type="hidden" id="oldh0x11C70002_0x01-7"></td>
+          </td>
+          
+          <input value="8" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">9 - </td><td width="40%" align="left">Réponse à un signal d'avertissement</td><td width="15%" align="center"><input value="*55" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-8')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-8"><input value="*55" type="hidden" id="oldh0x11C70002_0x01-8"></td>
+          </td>
+          
+          <input value="9" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">10 - </td><td width="40%" align="left">Parcage</td><td width="15%" align="center"><input value="*56" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-9')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-9"><input value="*56" type="hidden" id="oldh0x11C70002_0x01-9"></td>
+          </td>
+          
+          <input value="10" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">11 - </td><td width="40%" align="left">Interception dans un groupe d'interception</td><td width="15%" align="center"><input value="*57" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-10')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-10"><input value="*57" type="hidden" id="oldh0x11C70002_0x01-10"></td>
+          </td>
+          
+          <input value="11" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">12 - </td><td width="40%" align="left">Activer un rappel automatique</td><td width="15%" align="center"><input value="*58" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-11')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-11"><input value="*58" type="hidden" id="oldh0x11C70002_0x01-11"></td>
+          </td>
+          
+          <input value="12" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">13 - </td><td width="40%" align="left">Interception d'un poste</td><td width="15%" align="center"><input value="*59" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-12')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-12"><input value="*59" type="hidden" id="oldh0x11C70002_0x01-12"></td>
+          </td>
+          
+          <input value="13" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">14 - </td><td width="40%" align="left">Code affaire</td><td width="15%" align="center"><input value="*60" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-13')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-13"><input value="*60" type="hidden" id="oldh0x11C70002_0x01-13"></td>
+          </td>
+          
+          <input value="14" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">15 - </td><td width="40%" align="left">Ouverture porte</td><td width="15%" align="center"><input value="*61" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-14')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-14"><input value="*61" type="hidden" id="oldh0x11C70002_0x01-14"></td>
+          </td>
+          
+          <input value="15" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">16 - </td><td width="40%" align="left">Entrée en tiers</td><td width="15%" align="center"><input value="*62" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-15')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-15"><input value="*62" type="hidden" id="oldh0x11C70002_0x01-15"></td>
+          </td>
+          
+          <input value="16" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">17 - </td><td width="40%" align="left">Activer renvoi externe (canal D) </td><td width="15%" align="center"><input value="*64" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-16')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-16"><input value="*64" type="hidden" id="oldh0x11C70002_0x01-16"></td>
+          </td>
+          
+          <input value="17" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">18 - </td><td width="40%" align="left">Interrogation taxation</td><td width="15%" align="center"><input value="*65" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-17')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-17"><input value="*65" type="hidden" id="oldh0x11C70002_0x01-17"></td>
+          </td>
+          
+          <input value="18" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">19 - </td><td width="40%" align="left">Verrouillage du poste</td><td width="15%" align="center"><input value="*66" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-18')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-18"><input value="*66" type="hidden" id="oldh0x11C70002_0x01-18"></td>
+          </td>
+          
+          <input value="19" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">20 - </td><td width="40%" align="left">Numérotation associée</td><td width="15%" align="center"><input value="*67" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-19')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-19"><input value="*67" type="hidden" id="oldh0x11C70002_0x01-19"></td>
+          </td>
+          
+          <input value="20" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">21 - </td><td width="40%" align="left">Envoyer un message</td><td width="15%" align="center"><input value="*68" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-20')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-20"><input value="*68" type="hidden" id="oldh0x11C70002_0x01-20"></td>
+          </td>
+          
+          <input value="21" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">22 - </td><td width="40%" align="left">Activer un texte d'absence</td><td width="15%" align="center"><input value="*69" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-21')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-21"><input value="*69" type="hidden" id="oldh0x11C70002_0x01-21"></td>
+          </td>
+          
+          <input value="22" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">23 - </td><td width="40%" align="left">Envoyer un No abrégé centralisé ou individuel</td><td width="15%" align="center"><input value="*7" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-22')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-22"><input value="*7" type="hidden" id="oldh0x11C70002_0x01-22"></td>
+          </td>
+          
+          <input value="23" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">24 - </td><td width="40%" align="left">Appel interphone/diffusion</td><td width="15%" align="center"><input value="*80" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-23')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-23"><input value="*80" type="hidden" id="oldh0x11C70002_0x01-23"></td>
+          </td>
+          
+          <input value="24" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">25 - </td><td width="40%" align="left">Activer un relais</td><td width="15%" align="center"><input value="*90" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-24')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-24"><input value="*90" type="hidden" id="oldh0x11C70002_0x01-24"></td>
+          </td>
+          
+          <input value="25" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">26 - </td><td width="40%" align="left">Programmation des touches</td><td width="15%" align="center"><input value="*91" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-25')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-25"><input value="*91" type="hidden" id="oldh0x11C70002_0x01-25"></td>
+          </td>
+          
+          <input value="26" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">27 - </td><td width="40%" align="left">Modifier un numéro abrégé</td><td width="15%" align="center"><input value="*92" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-26')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-26"><input value="*92" type="hidden" id="oldh0x11C70002_0x01-26"></td>
+          </td>
+          
+          <input value="27" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">28 - </td><td width="40%" align="left">Modification du code de verrouillage</td><td width="15%" align="center"><input value="*93" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-27')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-27"><input value="*93" type="hidden" id="oldh0x11C70002_0x01-27"></td>
+          </td>
+          
+          <input value="28" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">29 - </td><td width="40%" align="left">Test du terminal</td><td width="15%" align="center"><input value="*940" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-28')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-28"><input value="*940" type="hidden" id="oldh0x11C70002_0x01-28"></td>
+          </td>
+          
+          <input value="29" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">30 - </td><td width="40%" align="left">Gestion du système</td><td width="15%" align="center"><input value="*95" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-29')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-29"><input value="*95" type="hidden" id="oldh0x11C70002_0x01-29"></td>
+          </td>
+          
+          <input value="30" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">31 - </td><td width="40%" align="left">Activer ne pas déranger</td><td width="15%" align="center"><input value="*97" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-30')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-30"><input value="*97" type="hidden" id="oldh0x11C70002_0x01-30"></td>
+          </td>
+          
+          <input value="32" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">32 - </td><td width="40%" align="left">Pilotage</td><td width="15%" align="center"><input value="*81" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-32')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-32"><input value="*81" type="hidden" id="oldh0x11C70002_0x01-32"></td>
+          </td>
+          
+          <input value="33" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">33 - </td><td width="40%" align="left">Annuler un renvoi</td><td width="15%" align="center"><input value="#1" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-33')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-33"><input value="#1" type="hidden" id="oldh0x11C70002_0x01-33"></td>
+          </td>
+          
+          <input value="34" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">34 - </td><td width="40%" align="left">Annuler le renvoi de nuit</td><td width="15%" align="center"><input value="#44" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-34')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-34"><input value="#44" type="hidden" id="oldh0x11C70002_0x01-34"></td>
+          </td>
+          
+          <input value="35" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">35 - </td><td width="40%" align="left">Activer le micro</td><td width="15%" align="center"><input value="#52" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-35')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-35"><input value="#52" type="hidden" id="oldh0x11C70002_0x01-35"></td>
+          </td>
+          
+          <input value="36" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">36 - </td><td width="40%" align="left">Reprise parcage</td><td width="15%" align="center"><input value="#56" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-36')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-36"><input value="#56" type="hidden" id="oldh0x11C70002_0x01-36"></td>
+          </td>
+          
+          <input value="37" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">37 - </td><td width="40%" align="left">Consulter/annuler les rappels automatiques</td><td width="15%" align="center"><input value="#58" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-37')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-37"><input value="#58" type="hidden" id="oldh0x11C70002_0x01-37"></td>
+          </td>
+          
+          <input value="38" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">38 - </td><td width="40%" align="left">Annuler le renvoi externe (canal D)</td><td width="15%" align="center"><input value="#64" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-38')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-38"><input value="#64" type="hidden" id="oldh0x11C70002_0x01-38"></td>
+          </td>
+          
+          <input value="39" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">39 - </td><td width="40%" align="left">Déverrouillage du poste</td><td width="15%" align="center"><input value="#66" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-39')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-39"><input value="#66" type="hidden" id="oldh0x11C70002_0x01-39"></td>
+          </td>
+          
+          <input value="40" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">40 - </td><td width="40%" align="left">Lire/effacer un message</td><td width="15%" align="center"><input value="#68" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-40')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-40"><input value="#68" type="hidden" id="oldh0x11C70002_0x01-40"></td>
+          </td>
+          
+          <input value="41" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">41 - </td><td width="40%" align="left">Annuler un texte d'absence</td><td width="15%" align="center"><input value="#69" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-41')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-41"><input value="#69" type="hidden" id="oldh0x11C70002_0x01-41"></td>
+          </td>
+          
+          <input value="42" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">42 - </td><td width="40%" align="left">Annuler Ne Pas Déranger</td><td width="15%" align="center"><input value="#97" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-42')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-42"><input value="#97" type="hidden" id="oldh0x11C70002_0x01-42"></td>
+          </td>
+          
+          <input value="43" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">43 - </td><td width="40%" align="left">Réponse automatique sur appel interphone</td><td width="15%" align="center"><input value="*96" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-43')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-43"><input value="*96" type="hidden" id="oldh0x11C70002_0x01-43"></td>
+          </td>
+          
+          <input value="44" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">44 - </td><td width="40%" align="left">Annuler réponse automatique sur appel interphone</td><td width="15%" align="center"><input value="#96" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-44')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-44"><input value="#96" type="hidden" id="oldh0x11C70002_0x01-44"></td>
+          </td>
+          
+          <input value="45" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">45 - </td><td width="40%" align="left">Désactiver un relais</td><td width="15%" align="center"><input value="#90" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-45')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-45"><input value="#90" type="hidden" id="oldh0x11C70002_0x01-45"></td>
+          </td>
+          
+          <input value="46" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">46 - </td><td width="40%" align="left">Annuler pilotage : effacer tous les abo. de la liste</td><td width="15%" align="center"><input value="#81" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-46')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-46"><input value="#81" type="hidden" id="oldh0x11C70002_0x01-46"></td>
+          </td>
+          
+          <input value="47" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">47 - </td><td width="40%" align="left">Annuler tous les services</td><td width="15%" align="center"><input value="#0" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-47')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-47"><input value="#0" type="hidden" id="oldh0x11C70002_0x01-47"></td>
+          </td>
+          
+          <input value="48" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">48 - </td><td width="40%" align="left">Annuler conférence</td><td width="15%" align="center"><input value="#3" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-48')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-48"><input value="#3" type="hidden" id="oldh0x11C70002_0x01-48"></td>
+          </td>
+          
+          <input value="49" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">49 - </td><td width="40%" align="left">Consultation de la liste des appelants</td><td width="15%" align="center"><input value="#82" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-49')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-49"><input value="#82" type="hidden" id="oldh0x11C70002_0x01-49"></td>
+          </td>
+          
+          <input value="50" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">50 - </td><td width="40%" align="left">Service associé</td><td width="15%" align="center"><input value="*83" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-50')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-50"><input value="*83" type="hidden" id="oldh0x11C70002_0x01-50"></td>
+          </td>
+          
+          <input value="51" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">51 - </td><td width="40%" align="left">Appel malveillant</td><td width="15%" align="center"><input value="*84" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-51')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-51"><input value="*84" type="hidden" id="oldh0x11C70002_0x01-51"></td>
+          </td>
+          
+          <input value="52" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">52 - </td><td width="40%" align="left">Intégrer groupement</td><td width="15%" align="center"><input value="*85" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-52')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-52"><input value="*85" type="hidden" id="oldh0x11C70002_0x01-52"></td>
+          </td>
+          
+          <input value="53" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">53 - </td><td width="40%" align="left">Retrait groupement</td><td width="15%" align="center"><input value="#85" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-53')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-53"><input value="#85" type="hidden" id="oldh0x11C70002_0x01-53"></td>
+          </td>
+          
+          <input value="54" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">54 - </td><td width="40%" align="left">Mémoriser dans la liste des appelants</td><td width="15%" align="center"><input value="*82" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-54')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-54"><input value="*82" type="hidden" id="oldh0x11C70002_0x01-54"></td>
+          </td>
+          
+          <input value="55" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">55 - </td><td width="40%" align="left">Activation masquage du N° SDA</td><td width="15%" align="center"><input value="*86" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-55')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-55"><input value="*86" type="hidden" id="oldh0x11C70002_0x01-55"></td>
+          </td>
+          
+          <input value="56" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">56 - </td><td width="40%" align="left">Désact. du masquage du N° SDA</td><td width="15%" align="center"><input value="#86" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-56')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-56"><input value="#86" type="hidden" id="oldh0x11C70002_0x01-56"></td>
+          </td>
+          
+          <input value="57" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">57 - </td><td width="40%" align="left">Suppression tonalité d'avertissement</td><td width="15%" align="center"><input value="*87" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-57')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-57"><input value="*87" type="hidden" id="oldh0x11C70002_0x01-57"></td>
+          </td>
+          
+          <input value="58" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">58 - </td><td width="40%" align="left">Activation tonalité d'avertissement</td><td width="15%" align="center"><input value="#87" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-58')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-58"><input value="#87" type="hidden" id="oldh0x11C70002_0x01-58"></td>
+          </td>
+          
+          <input value="59" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">59 - </td><td width="40%" align="left">Désactivation sonnerie poste</td><td width="15%" align="center"><input value="*98" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-59')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-59"><input value="*98" type="hidden" id="oldh0x11C70002_0x01-59"></td>
+          </td>
+          
+          <input value="60" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">60 - </td><td width="40%" align="left">Activation sonnerie poste</td><td width="15%" align="center"><input value="#98" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-60')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-60"><input value="#98" type="hidden" id="oldh0x11C70002_0x01-60"></td>
+          </td>
+          
+          <input value="61" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">61 - </td><td width="40%" align="left">Télégestion DTMF</td><td width="15%" align="center"><input value="*991" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-61')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-61"><input value="*991" type="hidden" id="oldh0x11C70002_0x01-61"></td>
+          </td>
+          
+          <input value="62" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">62 - </td><td width="40%" align="left">Autorisation télégestion DTMF</td><td width="15%" align="center"><input value="*992" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-62')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-62"><input value="*992" type="hidden" id="oldh0x11C70002_0x01-62"></td>
+          </td>
+          
+          <input value="63" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">63 - </td><td width="40%" align="left">Autorisation télégestion par accès ISDN</td><td width="15%" align="center"><input value="*993" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-63')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-63"><input value="*993" type="hidden" id="oldh0x11C70002_0x01-63"></td>
+          </td>
+          
+          <input value="64" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">64 - </td><td width="40%" align="left">Autorisation interro. à distance des données système</td><td width="15%" align="center"><input value="*994" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-64')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-64"><input value="*994" type="hidden" id="oldh0x11C70002_0x01-64"></td>
+          </td>
+          
+          <input value="65" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">65 - </td><td width="40%" align="left">Ouverture porte par code DTMF</td><td width="15%" align="center"><input value="*89" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-65')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-65"><input value="*89" type="hidden" id="oldh0x11C70002_0x01-65"></td>
+          </td>
+          
+          <input value="66" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">66 - </td><td width="40%" align="left">Ouverture porte par code DTMF verrouillée</td><td width="15%" align="center"><input value="#89" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-66')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-66"><input value="#89" type="hidden" id="oldh0x11C70002_0x01-66"></td>
+          </td>
+          
+          <input value="67" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">67 - </td><td width="40%" align="left">Reprise com. externe après touche mise en garde</td><td width="15%" align="center"><input value="*63" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-67')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-67"><input value="*63" type="hidden" id="oldh0x11C70002_0x01-67"></td>
+          </td>
+          
+          <input value="68" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">68 - </td><td width="40%" align="left">Attribuer N° SDA</td><td width="15%" align="center"><input value="*41" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-68')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-68"><input value="*41" type="hidden" id="oldh0x11C70002_0x01-68"></td>
+          </td>
+          
+          <input value="69" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">69 - </td><td width="40%" align="left">UCD - Intégration agents</td><td width="15%" align="center"><input value="*401" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-69')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-69"><input value="*401" type="hidden" id="oldh0x11C70002_0x01-69"></td>
+          </td>
+          
+          <input value="70" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">70 - </td><td width="40%" align="left">UCD - Retrait agent</td><td width="15%" align="center"><input value="#401" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-70')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-70"><input value="#401" type="hidden" id="oldh0x11C70002_0x01-70"></td>
+          </td>
+          
+          <input value="71" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">71 - </td><td width="40%" align="left">UCD - Agent disponible</td><td width="15%" align="center"><input value="*402" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-71')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-71"><input value="*402" type="hidden" id="oldh0x11C70002_0x01-71"></td>
+          </td>
+          
+          <input value="72" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">72 - </td><td width="40%" align="left">UCD - Agent indisponible</td><td width="15%" align="center"><input value="#402" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-72')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-72"><input value="#402" type="hidden" id="oldh0x11C70002_0x01-72"></td>
+          </tr>
+          
+          <input value="73" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">73 - </td><td width="40%" align="left">UCD Activer post-traitement</td><td width="15%" align="center"><input value="*403" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-73')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-73"><input value="*403" type="hidden" id="oldh0x11C70002_0x01-73"></td>
+          </td>
+          
+          <input value="74" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">74 - </td><td width="40%" align="left">UCD Désactiver post-traitement</td><td width="15%" align="center"><input value="#403" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-74')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-74"><input value="#403" type="hidden" id="oldh0x11C70002_0x01-74"></td>
+          </td>
+          
+          <input value="75" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">75 - </td><td width="40%" align="left">UCD Activer renvoi de nuit</td><td width="15%" align="center"><input value="*404" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-75')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-75"><input value="*404" type="hidden" id="oldh0x11C70002_0x01-75"></td>
+          </td>
+          
+          <input value="76" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">76 - </td><td width="40%" align="left">UCD Désactiver renvoi de nuit</td><td width="15%" align="center"><input value="#404" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-76')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-76"><input value="#404" type="hidden" id="oldh0x11C70002_0x01-76"></td>
+          </td>
+          
+          <input value="77" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">77 - </td><td width="40%" align="left">UCD Interroger file d'attente</td><td width="15%" align="center"><input value="*405" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-77')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-77"><input value="*405" type="hidden" id="oldh0x11C70002_0x01-77"></td>
+          </td>
+          
+          <input value="78" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">78 - </td><td width="40%" align="left">Telephone Data Service (TDS)</td><td width="15%" align="center"><input value="*42" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-78')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-78"><input value="*42" type="hidden" id="oldh0x11C70002_0x01-78"></td>
+          </td>
+          
+          <input value="79" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">79 - </td><td width="40%" align="left">Libérer lignes</td><td width="15%" align="center"><input value="*43" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-79')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-79"><input value="*43" type="hidden" id="oldh0x11C70002_0x01-79"></td>
+          </td>
+          
+          <input value="80" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">80 - </td><td width="40%" align="left">Recherche de personne: Rechercher</td><td width="15%" align="center"><input value="*45" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-80')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-80"><input value="*45" type="hidden" id="oldh0x11C70002_0x01-80"></td>
+          </td>
+          
+          <input value="81" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">81 - </td><td width="40%" align="left">Recherche de personne: Rencontre</td><td width="15%" align="center"><input value="#45" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-81')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-81"><input value="#45" type="hidden" id="oldh0x11C70002_0x01-81"></td>
+          </td>
+          
+          <input value="82" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">82 - </td><td width="40%" align="left">Appel de RDV: Activer</td><td width="15%" align="center"><input value="*46" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-82')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-82"><input value="*46" type="hidden" id="oldh0x11C70002_0x01-82"></td>
+          </td>
+          
+          <input value="83" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">83 - </td><td width="40%" align="left">Appel de RDV: Désactiver</td><td width="15%" align="center"><input value="#46" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-83')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-83"><input value="#46" type="hidden" id="oldh0x11C70002_0x01-83"></td>
+          </td>
+          
+          <input value="84" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">84 - </td><td width="40%" align="left">Activer déménagement poste</td><td width="15%" align="center"><input value="*9419" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-84')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-84"><input value="*9419" type="hidden" id="oldh0x11C70002_0x01-84"></td>
+          </td>
+          
+          <input value="85" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">85 - </td><td width="40%" align="left">Désactiver déménagement poste</td><td width="15%" align="center"><input value="#9419" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-85')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-85"><input value="#9419" type="hidden" id="oldh0x11C70002_0x01-85"></td>
+          </td>
+          
+          <input value="86" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">86 - </td><td width="40%" align="left">Déclaration combinés sans fil (CMI)</td><td width="15%" align="center"><input value="*942" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-86')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-86"><input value="*942" type="hidden" id="oldh0x11C70002_0x01-86"></td>
+          </td>
+          
+          <input value="87" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">87 - </td><td width="40%" align="left">Verrouillage centralisé</td><td width="15%" align="center"><input value="*943" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-87')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-87"><input value="*943" type="hidden" id="oldh0x11C70002_0x01-87"></td>
+          </td>
+          
+          <input value="88" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">88 - </td><td width="40%" align="left">Surveillance d'appel</td><td width="15%" align="center"><input value="*944" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-88')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-88"><input value="*944" type="hidden" id="oldh0x11C70002_0x01-88"></td>
+          </td>
+          
+          <input value="89" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">89 - </td><td width="40%" align="left">Drop Last Conference Party within CO (USA only)</td><td width="15%" align="center"><input value="-" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-89')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-89"><input value="-" type="hidden" id="oldh0x11C70002_0x01-89"></td>
+          </td>
+          
+          <input value="90" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">90 - </td><td width="40%" align="left">Activer autoriser les avertissement</td><td width="15%" align="center"><input value="*490" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-90')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-90"><input value="*490" type="hidden" id="oldh0x11C70002_0x01-90"></td>
+          </td>
+          
+          <input value="91" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">91 - </td><td width="40%" align="left">Désactiver autoriser les avertissement</td><td width="15%" align="center"><input value="#490" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-91')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-91"><input value="#490" type="hidden" id="oldh0x11C70002_0x01-91"></td>
+          </td>
+          
+          <input value="92" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">92 - </td><td width="40%" align="left">Sélection langue</td><td width="15%" align="center"><input value="*48" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-92')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-92"><input value="*48" type="hidden" id="oldh0x11C70002_0x01-92"></td>
+          </td>
+          
+          <input value="93" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">93 - </td><td width="40%" align="left">Flexcall</td><td width="15%" align="center"><input value="*508" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-93')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-93"><input value="*508" type="hidden" id="oldh0x11C70002_0x01-93"></td>
+          </td>
+          
+          <input value="94" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">94 - </td><td width="40%" align="left">Activer le filtrage pour MULAP</td><td width="15%" align="center"><input value="*502" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-94')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-94"><input value="*502" type="hidden" id="oldh0x11C70002_0x01-94"></td>
+          </td>
+          
+          <input value="95" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">95 - </td><td width="40%" align="left">Désactiver le filtrage pour MULAP</td><td width="15%" align="center"><input value="#502" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-95')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-95"><input value="#502" type="hidden" id="oldh0x11C70002_0x01-95"></td>
+          </td>
+          
+          <input value="96" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">96 - </td><td width="40%" align="left">Activer renvoi pour MULAP</td><td width="15%" align="center"><input value="*501" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-96')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-96"><input value="*501" type="hidden" id="oldh0x11C70002_0x01-96"></td>
+          </td>
+          
+          <input value="97" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">97 - </td><td width="40%" align="left">Désactiver renvoi pour MULAP</td><td width="15%" align="center"><input value="#501" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-97')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-97"><input value="#501" type="hidden" id="oldh0x11C70002_0x01-97"></td>
+          </td>
+          
+          <input value="98" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">98 - </td><td width="40%" align="left">Geler le traçage</td><td width="15%" align="center"><input value="*509" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-98')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-98"><input value="*509" type="hidden" id="oldh0x11C70002_0x01-98"></td>
+          </td>
+          
+          <input value="99" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">99 - </td><td width="40%" align="left">DISA interne</td><td width="15%" align="center"><input value="*47" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-99')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-99"><input value="*47" type="hidden" id="oldh0x11C70002_0x01-99"></td>
+          </td>
+          
+          <input value="100" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">100 - </td><td width="40%" align="left">Numérotation KEYPAD</td><td width="15%" align="center"><input value="*503" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-100')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-100"><input value="*503" type="hidden" id="oldh0x11C70002_0x01-100"></td>
+          </td>
+          
+          <input value="101" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">101 - </td><td width="40%" align="left">annuaire interne</td><td width="15%" align="center"><input value="*54" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-101')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-101"><input value="*54" type="hidden" id="oldh0x11C70002_0x01-101"></td>
+          </td>
+          
+          <input value="102" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">102 - </td><td width="40%" align="left">Terminal analogique d'hôtel</td><td width="15%" align="center"><input value="*491" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-102')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-102"><input value="*491" type="hidden" id="oldh0x11C70002_0x01-102"></td>
+          </td>
+          
+          <input value="103" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">103 - </td><td width="40%" align="left">Code verrouillage centralisé / redéfinir code</td><td width="15%" align="center"><input value="#943" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-103')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-103"><input value="#943" type="hidden" id="oldh0x11C70002_0x01-103"></td>
+          </td>
+          
+          <input value="104" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">104 - </td><td width="40%" align="left">Renvoi d'appel client en mode urgence activé</td><td width="15%" align="center"><input value="*9411" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-104')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-104"><input value="*9411" type="hidden" id="oldh0x11C70002_0x01-104"></td>
+          </td>
+          
+          <input value="105" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">105 - </td><td width="40%" align="left">Renvoi d'appel client en mode urgence désactivé</td><td width="15%" align="center"><input value="#9411" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-105')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-105"><input value="#9411" type="hidden" id="oldh0x11C70002_0x01-105"></td>
+          </td>
+          
+          <input value="106" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">106 - </td><td width="40%" align="left">Enregistrement vocal act.</td><td width="15%" align="center"><input value="*493" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-106')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-106"><input value="*493" type="hidden" id="oldh0x11C70002_0x01-106"></td>
+          </td>
+          
+          <input value="107" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">107 - </td><td width="40%" align="left">Enregistrement vocal dés.</td><td width="15%" align="center"><input value="#493" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-107')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-107"><input value="#493" type="hidden" id="oldh0x11C70002_0x01-107"></td>
+          </td>
+          
+          <input value="108" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">108 - </td><td width="40%" align="left">Renvoi temporisé activé</td><td width="15%" align="center"><input value="*495" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-108')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-108"><input value="*495" type="hidden" id="oldh0x11C70002_0x01-108"></td>
+          </td>
+          
+          <input value="109" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">109 - </td><td width="40%" align="left">Renvoi temporisé désactivé</td><td width="15%" align="center"><input value="#495" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-109')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-109"><input value="#495" type="hidden" id="oldh0x11C70002_0x01-109"></td>
+          </td>
+          
+          <input value="110" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">110 - </td><td width="40%" align="left">Message discret</td><td width="15%" align="center"><input value="*945" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-110')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-110"><input value="*945" type="hidden" id="oldh0x11C70002_0x01-110"></td>
+          </td>
+          
+          <input value="111" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">111 - </td><td width="40%" align="left">Data I/O</td><td width="15%" align="center"><input value="*494" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-111')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-111"><input value="*494" type="hidden" id="oldh0x11C70002_0x01-111"></td>
+          </td>
+          
+          <input value="112" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">112 - </td><td width="40%" align="left">Activer le plugin de service SSDP</td><td width="15%" align="center"><input value="*996" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-112')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-112"><input value="*996" type="hidden" id="oldh0x11C70002_0x01-112"></td>
+          </td>
+          
+          <input value="113" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">113 - </td><td width="40%" align="left">Verrouiller le plugin de service SSDP</td><td width="15%" align="center"><input value="#996" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-113')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-113"><input value="#996" type="hidden" id="oldh0x11C70002_0x01-113"></td>
+          </td>
+          
+          <input value="114" name="Index" type="hidden">
+          <tr style="height:32px">
+          <td width="5%" align="center">114 - </td><td width="40%" align="left">Arrêt contrôlé</td><td width="15%" align="center"><input value="*997" maxlength="5" size="5" onkeyup="return rmInvalidDigitsInternal (this,'CN');" onblur="CheckDublicates(this.id,'oldh0x11C70002_0x01-114')" onchange="setDeltaList(this.id)" type="text" id="h0x11C70002_0x01-114"><input value="*997" type="hidden" id="oldh0x11C70002_0x01-114"></td>
+          </td>
+        </tbody>
+    </table>
+
+    <br><br><br>
+    <footer style="background-color: rgb(27, 27, 180);">
+        <img src="./footer.png">
+    </footer>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sietel - Cheat-Sheet</title>
+    <link rel="stylesheet" href="./styleunify.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>VISP</h1>
+        <br><br>
+        <button class="mon-bouton" onclick="window.location.href='./index.html'">Accueil</button>
+        <button class="mon-bouton" onclick="window.location.href='./unifyraccourci.html'">Raccourcis Unify</button>
+        <br><br>
+    </header>
+
+    <br>
+    <h1 id="documentation-visp">Commandes VISP</h1>
+    <br>
+
+
+    <br>
+    <div class="encadrement">
+        <h3 id="g-n-ralit-es">Généralitées</h3>
+        <br>
+        <p>Sauvegarde :</p>
+        <pre><code>lisos-snapshots config <span class="hljs-comment">--description joey</span>
+        </code></pre><p>Reinjecter ancienne mise à jour :  (necessite redemarrage)</p>
+        <pre><code>lisos-snapshots <span class="hljs-keyword">set</span> <span class="hljs-string">"ID"</span>
+        </code></pre><p>Upgrade de la VISP :  (necessite redemarrage)</p>
+        <pre><code>lisos-upgrade <span class="hljs-built_in">list</span>
+        lisos-upgrade <span class="hljs-keyword">set</span> <span class="hljs-string">"version exemple:2.11-7"</span>
+        </code></pre><p>Downgrade possible en indiquant un numero de version inferieur</p>
+    </div>
+    <br><br>
+    <div class="encadrement2">
+        <h3 id="l2tp">L2TP</h3>
+        <br>
+        <p>Création lien ADSL interface ppp :   (pour login 64 caractères maximum)</p>
+        <pre><code>vispprov ppp add -l adsl@formation1.telco -p bonjour -a <span class="hljs-number">10.93</span><span class="hljs-number">.30</span><span class="hljs-number">.111</span> -m <span class="hljs-number">10.93</span><span class="hljs-number">.30</span><span class="hljs-number">.111</span> -c <span class="hljs-string">"FORMATION JOEY"</span>
+        -&gt; interface ppp254001 created
+        -&gt; ok
+        </code></pre><p>Supprimer un lien L2TP :</p>
+        <pre><code>vispprov ppp <span class="hljs-selector-tag">del</span> -l adsl@formation1<span class="hljs-selector-class">.telco</span>
+        -&gt; ok 
+        </code></pre><p>Consulter le fichier configurations des Users :</p>
+        <pre><code>nano-tiny <span class="hljs-regexp">/etc/</span>freeradius<span class="hljs-regexp">/users</span>
+        </code></pre><p>Déployer limacheck si &quot;-m&quot; n&#39;est pas renseigné dans la commande vispprov - supervision sur l&#39;extranet :</p>
+        <pre><code>nano-tiny <span class="hljs-regexp">/etc/ppp/profiles/</span><span class="hljs-string">"login de la ppp ex: adsl@formation1.telco"</span><span class="hljs-function">
+        
+        -&gt;</span>  name ppp254001<span class="hljs-function">
+        -&gt;</span>  limacheck <span class="hljs-string">"ip public"</span>
+        </code></pre><p>Pour appliquer les changements :</p>
+        <pre><code><span class="hljs-regexp">/etc/i</span>nit.d<span class="hljs-regexp">/freeradius restart</span>
+        </code></pre><p>freeradius = authentification des clients </p>
+        <p><br></p>
+    </div>
+    <br><br>
+    <div class="encadrement3">
+        <h3 id="atmudp">ATMUDP</h3>
+        <br>
+        <p>Ajoût de lien EFM :</p>
+        <pre><code>vispprov nas <span class="hljs-keyword">add</span> -a <span class="hljs-number">130.193</span><span class="hljs-meta">.30</span><span class="hljs-meta">.101</span>/<span class="hljs-number">30</span> -v <span class="hljs-number">217.15</span><span class="hljs-meta">.80</span><span class="hljs-meta">.54</span>:<span class="hljs-number">2600</span>/<span class="hljs-number">0</span>/<span class="hljs-number">32</span> -m <span class="hljs-number">130.193</span><span class="hljs-meta">.30</span><span class="hljs-meta">.102</span> -c <span class="hljs-string">"EFM JOEY"</span>
+        -&gt; interface nas254001 created
+        -&gt; ok
+        </code></pre><p>Première ip = cote visp 130.193.30.101<br>
+        Deuxième ip = cote routeur 130.193.30.102</p><br>
+        <p>Modifications du fichiers de configuration des interfaces nas :</p>
+        <pre><code>nano-tiny <span class="hljs-regexp">/etc/</span>network<span class="hljs-regexp">/interfaces</span>
+        </code></pre><p>Afficher les interface ATMUDP :</p>
+        <pre><code>nano-tiny /etc/network/atmudp
+        
+        -&gt; utile quand incident sur collecte 
+        </code></pre><p>Appliquer les changements limachecks :</p>
+        <pre><code>lima-itf <span class="hljs-keyword">stop</span>-conf -i nas254001 ; lima-itf <span class="hljs-keyword">start</span>-conf -i nas254001
+        </code></pre><p>Appliquer les changements de /etc/network/interfaces : </p>
+        <pre><code>ifdown nas254001
+        
+        -<span class="ruby">&gt; modifier fichier /etc/network/interfaces 
+        </span>
+        ifup nas254001
+        </code></pre><p>Supprimer interfaces nas :</p>
+        <pre><code>vispprov nas <span class="hljs-selector-tag">del</span> -d <span class="hljs-string">"nom interface nas"</span>
+        </code></pre><p>ajouter route static dans /etc/network/interfaces : </p>
+        <pre><code>up ip route add <span class="hljs-number">130.193</span><span class="hljs-number">.30</span><span class="hljs-number">.100</span>/<span class="hljs-number">30</span> via <span class="hljs-number">10.0</span><span class="hljs-number">.0</span><span class="hljs-number">.2</span> dev nas254001 proto static || true
+        </code></pre><p>Afficher route nas254001 qui est sur la table 0 :</p>
+        <pre><code>ip r s t <span class="hljs-number">0</span><span class="hljs-string">| grep nas254001</span>
+        </code></pre><p>Vérifier l&#39;état de l&#39;interface nas254001 : </p>
+        <pre><code>lima-control<span class="hljs-built_in"> check </span>nas254001 dump
+        </code></pre>
+    </div>
+
+    <br><br><br>
+    <footer style="background-color: rgb(25, 25, 148);">
+        <img src="./footer.png">
+    </footer>
+
+</body>
+</html>

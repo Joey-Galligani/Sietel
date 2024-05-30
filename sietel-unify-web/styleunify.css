@@ -1,0 +1,131 @@
+
+html > body tbody.scrollContent {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+body, td, th, button, input, select, textarea {
+    font-family: Arial,Tahoma,Verdana;
+    font-size: large;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+body {
+    background-color: #E6E6E6;
+    color: #000000;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: large;
+}
+
+header {
+    background-color: #1a5ec5;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+  /* Styles pour les liens dans le header */
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+p {
+    font-weight: bold;
+}
+
+.encadrement {
+    padding: 10px; /* Espace à l'intérieur de la bordure */
+    display: inline-block; /* Permet de limiter la largeur à celle du contenu */
+    background-color: #6fa2ee;
+    color : #031229;
+    box-sizing: border-box;
+    width: 30%; /* Ajuster la largeur selon vos besoins */
+    margin: 1%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.encadrement2 {
+    padding: 10px; /* Espace à l'intérieur de la bordure */
+    display: inline-block; /* Permet de limiter la largeur à celle du contenu */
+    background-color: #58b0c0;
+    color : rgb(0, 0, 0);
+    box-sizing: border-box;
+    width: 50%; /* Ajuster la largeur selon vos besoins */
+    margin: 1%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.encadrement3 {
+    padding: 10px; /* Espace à l'intérieur de la bordure */
+    display: inline-block; /* Permet de limiter la largeur à celle du contenu */
+    background-color: #6282b1;
+    color : rgb(8, 3, 34);
+    box-sizing: border-box;
+    width: 50%; /* Ajuster la largeur selon vos besoins */
+    margin: 1%;
+    padding: 10px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mon-bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #90d9e2; /* Couleur de fond */
+    color: rgb(34, 9, 80); /* Couleur du texte */
+    border: 2px solid #081655; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    transition: background-color 0.3s ease;
+  }
+
+  /* Changement de couleur au survol */
+.mon-bouton:hover {
+    background-color: #ffffff;
+}
